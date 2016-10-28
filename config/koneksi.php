@@ -11,5 +11,5 @@ $koneksi = mysql_connect($server,$user,$password,$database);
 
 if($koneksi)
 {
-    echo "Koneksi berhasil";
+    echo "Selamat anda berhasil berhasil";
 }
