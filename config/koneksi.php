@@ -13,3 +13,7 @@ if($koneksi)
 {
     echo "Selamat koneksi anda berhasil";
 }
+else
+{
+    echo "koneksi anda gagal";
+}
