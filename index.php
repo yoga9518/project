@@ -12,9 +12,22 @@ and open the template in the editor.
         <title>Belajar PHP</title>
     </head>
     <body>
+        <h3>Selamat datang di sistem ini</h3>
         <?php
+        include 'config/koneksi.php';
+        session_start();
+        var_dump($_SESSION);
+        if(isset($_SESSION["login"]))
+        {
+            echo "anda berhasil login";
+            echo '<a href="logout.php" class="btn btn-lg btn-danger">logout</a>';
+        }
+        else
+        {
+            include 'login.php';   
+        }
+        
         // put your code here
-        include 'login.php';
         ?>
     </body>
 </html>
