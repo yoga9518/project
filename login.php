@@ -1,12 +1,18 @@
 <div class="col-md-4"></div>
 <div class="col-md-4">
+    <?php
+    if(isset($_GET["login"])){ ?>
+    <div class="alert-danger text-center">
+        <span>Username atau password anda salah !!</span>
+    </div>
+    <?php } ?>
     <form class="login-form" action="login_proses.php" method="post">
         <div class="form-group" align="center">
-        <input class="form-control login-field" type="text" name="username" placeholder="username">
+            <input class="form-control login-field" type="text" name="username" placeholder="username" required=>
         <label class="login-field-icon fui-user" for="login-name"></label>
         </div>
         <div class="form-group" align="center">
-        <input class="form-control login-field" type="password" name="password" placeholder="password">
+            <input class="form-control login-field" type="password" name="password" placeholder="password" required=>
         <label class="login-field-icon fui-lock" for="login-pass"></label>
         </div>
         <div class-="form-group" align="center">

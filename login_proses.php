@@ -16,5 +16,5 @@ if($data>0)
 }
 else
 {
-    
+    header("location:index.php?login=0");
 }

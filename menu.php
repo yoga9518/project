@@ -29,7 +29,7 @@
             if (!isset($_SESSION["login"])) {
                 ?>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.php">Register</a></li>
+                <li><a href="index.php?menu=1">Register</a></li>
             </ul>
             <?php }?>
         </div><!-- /.navbar-collapse -->
